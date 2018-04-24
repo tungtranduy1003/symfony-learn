@@ -1,0 +1,11 @@
+acme_demo_homepage:
+    path:     /
+    defaults: { _controller: AcmeDemoBundle:Default:index }
+#
+random:
+    path:     /random/{limit} #limit is a wild card
+    #limit == number/string
+    defaults: {_controller: AcmeDemoBundle:Random:index}
+    #using AcmeDemoBundle RandomController and indexAction method
+
+    #when URL given -> route matched -> execute Controller and Action tuong ung'

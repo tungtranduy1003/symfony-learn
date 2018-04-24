@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome XXX!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+      <h1>Well Well</h1>
+      <h2 style="color:orange"> {% block body %}{% endblock %}</h2> 
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

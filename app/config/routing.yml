@@ -1,0 +1,14 @@
+acme_demo:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# acme_demo:
+#     resource: "@Acme/DemoBundle/Resources/config/routing.yml"
+#     #load routing configuration from Resources/config/routing.yml
+#     #routing directly from app/config/routing.yml
+#     #or from Acme/Resources/config/routing.yml
+#     prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
